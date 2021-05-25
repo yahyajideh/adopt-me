@@ -28,7 +28,7 @@ const SearchParams = () => {
             onChange={(e) => setAnimal(e.target.value)}
             onBlur={(e) => setAnimal(e.target.value)}
           >
-            <option />
+            <option value="">Select option</option>
             {ANIMALS.map((animal) => (
               <option key={animal} value={animal}>
                 {animal.charAt(0).toUpperCase() + animal.slice(1)}
@@ -44,7 +44,7 @@ const SearchParams = () => {
             onChange={(e) => setBreed(e.target.value)}
             onBlur={(e) => setBreed(e.target.value)}
           >
-            <option />
+            <option value="">Select option</option>
             {breeds.map((breed) => (
               <option key={breed} value={breed}>
                 {breed.charAt(0).toUpperCase() + breed.slice(1)}
